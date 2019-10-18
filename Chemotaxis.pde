@@ -4,7 +4,8 @@
  	size(500, 500);
  	background(127);
  	stroke(1);
- 	colony = new Bacteria[10];   
+ 	colony = new Bacteria[20];   
+ 	
  	for(int i = 0; i < colony.length; i++){
  		colony[i] = new Bacteria(250,250);
  	}
@@ -17,6 +18,7 @@
  		colony[i].show();
  	}
  }
+
  class Bacteria    
  {     
  	int myX, myY, type, type2, type3;
@@ -30,8 +32,20 @@
  	}  
  	void move()
  	{
- 		myX += (int)(Math.random()*5)-2;
- 		myY += (int)(Math.random()*5)-2;
+ 		if(mouseX > myX){
+ 			myX -= (int)(Math.random()*5-1);
+ 		}else if(mouseX < myX){
+ 			myX += (int)(Math.random()*5-1);
+ 		}else{
+ 			myX -= (int)(Math.random()*5-2);
+ 		}
+ 		if(mouseY > myY){
+ 			myY -= (int)(Math.random()*5-1);
+ 		}else if(mouseY < myY){
+ 			myY += (int)(Math.random()*5-1);
+ 		}else{
+ 			myY -= (int)(Math.random()*5-2);
+ 		}
  	}
  	void show()
  	{
