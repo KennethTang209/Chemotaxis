@@ -2,7 +2,7 @@
  void setup()   
  {     
  	size(750, 750);
- 	frameRate(40);
+ 	frameRate(30);
  	colony = new Bacteria[400];   
  	for(int i = 0; i < colony.length; i++)
  	{
@@ -120,8 +120,14 @@
  	void show()
  	{
  		fill(type);
- 		stroke(0);
- 		ellipse(myX, myY, 10, 10);
+ 		stroke(type);
+ 		beginShape();
+ 		vertex(myX - 7, myY);
+ 		vertex(myX + 7, myY);
+ 		vertex(myX - 5, myY + 7);
+ 		vertex(myX, myY - 7);
+ 		vertex(myX + 5, myY + 7);
+ 		endShape();
  	}
  }    
  void drawKirby()
