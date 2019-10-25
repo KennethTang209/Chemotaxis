@@ -135,17 +135,17 @@
   fill(255,0,0);
   ellipse(340,410,50,25);
   ellipse(410,410,50,25);
-  fill(#F0A7FF);
+  fill(240, 167, 255);
   stroke(0);
   ellipse(340,340,30,30);
   ellipse(410,340,30,30);
-  stroke(#F0A7FF);
+  stroke(240, 167, 255);
   ellipse(375,375,100,100);
   stroke(0);
   fill(0);
   ellipse(360,345,10,30);
   ellipse(390,345,10,30);
-  fill(#240CC9);
+  fill(36, 12, 201);
   ellipse(360,345,8,28);
   ellipse(390,345,8,28);
   fill(0);
@@ -157,10 +157,10 @@
 }
 void drawKirbyMouth()
 {
-  fill(#E82149);
-  stroke(#F0A7FF);
+  fill(232, 33, 73);
+  stroke(240, 167, 255);
   ellipse(375,390,50,55);
-  fill(#FF4B6F);
-  stroke(#E82149);
+  fill(255, 75, 111);
+  stroke(232, 33, 73);
   ellipse(375,395,40,40);
 }
